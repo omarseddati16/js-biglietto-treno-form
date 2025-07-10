@@ -1,0 +1,256 @@
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #A32A5E;
+  color: #fff;
+  line-height: 1.6;
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Main Heading */
+h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 2.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Container for the form section */
+.containter {
+  max-width: 800px;
+  width: 100%;
+  background: #6A1A3C;
+  padding: 35px 50px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.containter .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.containter .col-12 {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.containter form div {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #FFC0CB;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #FFC0CB;
+  border-radius: 8px;
+  font-size: 1.1em;
+  box-sizing: border-box;
+  background-color: #4C0D2C;
+  color: #fff;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"]::placeholder {
+  color: #D3D3D3;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3);
+  outline: none;
+  background-color: #3A0B22;
+}
+
+select option {
+  background-color: #4C0D2C;
+  color: #fff;
+}
+
+button {
+  padding: 12px 35px;
+  margin: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.crea {
+  background-color: #F7D18C;
+  color: #6A1A3C;
+}
+
+.crea:hover {
+  background-color: #F5C672;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.crea:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.elimina {
+  background-color: #CDC9C9;
+  color: #6A1A3C;
+}
+
+.elimina:hover {
+  background-color: #BDB7B7;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.elimina:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Ticket Display Section */
+.container {
+  max-width: 800px;
+  width: 100%;
+  background: #6A1A3C;
+  padding: 0;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.container h3 {
+  color: #fff;
+  font-size: 1.6em;
+  padding: 20px;
+  margin: 0;
+  background-color: #4C0D2C;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Table Styles for the ticket details */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  background-color: #6A1A3C;
+  color: #fff;
+}
+
+th,
+td {
+  border: none;
+  padding: 15px 20px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  background-color: #4C0D2C;
+  font-weight: bold;
+  color: #FFC0CB;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  border-bottom: 2px solid #5A1535;
+}
+
+/* First column of the table (DETTAGLIO PASSEGGERI and NOME PASSEGGERO) */
+.col-4 {
+  flex: none;
+  width: 35%;
+  background-color: #5A1535;
+  padding: 20px 25px;
+  border-right: 2px solid #6A1A3C;
+  box-sizing: border-box;
+}
+
+.col-4 h3 {
+  font-size: 1.4em;
+  color: #FFC0CB;
+  margin-bottom: 15px;
+  text-align: left;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.col-4 p {
+  font-size: 1.1em;
+  font-weight: normal;
+  color: #FFF;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+#showName {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #F7D18C;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Table body cells */
+td {
+  color: #fff;
+  font-size: 1.0em;
+}
+
+#tipoBiglietto {
+  font-weight: bold;
+  color: #F7D18C;
+
+}
+
+#carriage,
+#cpCode {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: #fff;
+}
+
+#finalPrice {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #F7D18C;
+  text-align: left;
+}

@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/script.css">
 </head>
 
 <body>
   <div>
-    <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+    <h2 class="testoIniziale">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
   </div>
-  <div class="containter">
+  <div class="containterPrimary">
     <div class="row">
       <div class="col-12">
         <form>
@@ -40,31 +41,29 @@
   <h2>IL TUO BIGLIETTO</h2>
   <div class="container">
     <div class="row">
-      <div class="col-4">
+      <div class="col-12">
         <h3>DETTAGLIO PASSEGGERI</h3>
         <h3>NOME PASSEGGERO</h3>
         <p id="showName"></p>
       </div>
-      <div class="col-8">
-        <table>
-          <thead>
-            <tr>
-              <th>Offerta</th>
-              <th>Carrozza</th>
-              <th>Codice CP</th>
-              <th>Costo biglietto</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td id="tipoBiglietto">Biglietto standard</td>
-              <td id="carriage">5</td>
-              <td id="cpCode">92911</td>
-              <td id="finalPrice">2.10&euro;</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Offerta</th>
+            <th>Carrozza</th>
+            <th>Codice CP</th>
+            <th>Costo biglietto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="tipoBiglietto">Biglietto standard</td>
+            <td id="carriage">5</td>
+            <td id="cpCode">92911</td>
+            <td id="finalPrice">2.10&euro;</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
   </div>
