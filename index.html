@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+  </div>
+  <div class="containter">
+    <div class="row">
+      <div class="col-12">
+        <form>
+          <div>
+            <label>Nome Cognome</label>
+            <input type="text" name="identita" id="identita" class="nome" placeholder="Nome Cognome">
+          </div>
+          <div>
+            <label>Km da percorrere</label>
+            <input type="text" name="km" id="km" class="distanza" placeholder="km">
+          </div>
+          <div>
+            <label>fascia d'età</label>
+            <select name="Eta" id="age">
+              <option value=""></option>
+              <option value="Maggiorenne">Maggiorenne</option>
+              <option value="Minorenne">Minorenne</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <button id="Biglietto" class="crea">Genera</button>
+      <button id="Cancella" class="elimina">Annulla</button>
+    </div>
+  </div>
+  <h2>IL TUO BIGLIETTO</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <h3>DETTAGLIO PASSEGGERI</h3>
+        <h3>NOME PASSEGGERO</h3>
+        <p>Jon Snow</p>
+      </div>
+      <div class="col-8">
+        <table>
+          <thead>
+            <tr>
+              <th>Offerta</th>
+              <th>Carrozza</th>
+              <th>Codice CP</th>
+              <th>Costo biglietto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Biglietto standard</td>
+              <td>5</td>
+              <td>92911</td>
+              <td>2.10&euro;</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
